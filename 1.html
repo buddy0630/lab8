@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lab8</title>
+    <script>
+        var n = window.prompt('n-d utga oruul');
+        var g=0;
+        while(n!=0){
+            g+=(n%10)
+            n=Math.floor(n/10);
+        }
+   
+    
+        var a = [];
+        var j=0;
+        while(g!=0){
+            a[j]=(g%10)
+            g=Math.floor(g/10); 
+            j++;
+        }
+        var x=true;
+        for(j=0,i=a.length-1;j<i;j++,i--){
+            if(a[j]!=a[i]){
+                x=false;
+                break;
+            }
+         
+        }
+        
+
+        
+        if(x){
+            document.writeln("yes");
+        }
+        else{
+            document.writeln("no");
+        }
+        
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>

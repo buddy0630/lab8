@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lab8</title>
+    <script>
+        var a=[];
+        var i;
+        for(i=0;i<5;i++){
+            a[i] = window.prompt(`a[${i}]= `);
+        }
+        var x=a[0]*a[1]*a[2]*a[3]*a[4];
+        var y=1;
+        for(i=x;i>1;i--){
+            if(i%a[0]==0 && i%a[1]==0 && i%a[2]==0 && i%a[3]==0 && i%a[4]==0){
+                y=i;
+            }
+        }
+        document.writeln("hamgiin baga yoronhii huvaagdagch in bol ",y);
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
